@@ -5,5 +5,5 @@ const NEWS = "news/"
 
 
 function redirect(e) {
-    window.location.href = (window.location.href + e + "index.html");
+    window.Location.href = window.location.href.replace(ABOUT, HOME);
 }

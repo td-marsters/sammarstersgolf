@@ -8,5 +8,5 @@ function header(link) {
 }
 
 function redirect(e) {
-    window.location.href.replace(ABOUT, HOME);
+    window.Location.href = window.location.href.replace(ABOUT, HOME);
 }
