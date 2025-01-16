@@ -8,7 +8,5 @@ function header(link) {
 }
 
 function redirect(e) {
-    //window.location.href = (window.location.href + e + "index.html");
-    console.log(window.location.origin);
-    //window.location.replace(window.location.host + e + "index.html");
+    window.location.href.replace(ABOUT, HOME);
 }
