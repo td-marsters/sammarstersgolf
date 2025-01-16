@@ -1,9 +1,9 @@
-const HOME = ""
-const ABOUT = "about/"
-const EVENTS = "events/"
-const NEWS = "news/"
+const HOME = "sammarstersgolf/"
+const ABOUT = "sammarstersgolf/about/"
+const EVENTS = "sammarstersgolf/events/"
+const NEWS = "sammarstersgolf/news/"
 
 
 function redirect(e) {
-    window.Location.href = window.location.href.replace(ABOUT, HOME);
+    window.location.href = window.location.href.replace(HOME, e);
 }

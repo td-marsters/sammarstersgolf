@@ -1,0 +1,97 @@
+:root {
+    --icon-left: 21%;
+    --icon-offset: 25%;
+}
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 5% 5% calc(45%/4) calc(45%/4) calc(45%/4) calc(45%/4);
+    grid-template-rows: 100%;
+    gap: 0%;
+    background-color: white;
+    justify-content: center;
+}
+.grid-container > div {
+    background-color: white;
+    font-family: "Ubuntu", serif;
+    height: 100%;
+}
+
+#icon {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    position: relative;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+#landing {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    size: 0%;
+}
+
+#header-title {
+    font-size: 200%;
+    text-align: left;
+    object-fit: cover;
+}
+
+#header-items {
+    padding-top: 10%;
+    font-size: 150%;
+    object-fit: cover;
+    text-align: right;
+}
+
+#header-items > p {
+    padding: 15% 0px;
+}
+
+#img > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: "Ubuntu", serif;
+    background-color: rgba(255, 255, 255, 20);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
