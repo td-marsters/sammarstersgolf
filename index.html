@@ -32,6 +32,14 @@
       <image src="images/cooks.png" id="icon"></image>
     </div>
     <div id="title-divider"></div>
+    <div id="dropdown-menu">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
 
     <div id="header-items" >
       <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
@@ -45,13 +53,30 @@
     <div id="header-items">
       <p class="hover-underline-animation" onclick="redirect(NEWS)">News</p>
     </div>
-  </div>
-
-  <div id="img">
-    <image src="images/landing5.JPG" id="landing"></image>
-
-  </div>
     
+  </div>
+
+  <div id="content">
+    <div id="img">
+      <image src="images/landing5.JPG" id="landing"></image>
+    </div>
+
+    <div id="dropdown-items" style="display: none;">
+      <p class="hover-underline-animation" onclick="redirect(HOME)"><u>Home</u></p>
+      <p class="hover-underline-animation" onclick="redirect(ABOUT)">About</p>
+      <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
+      <p class="hover-underline-animation" onclick="redirect(NEWS)">News</p>
+    </div>
+  
+  </div>
+
+  <div id="foot-note">
+    <div id="text">
+      <p><strong>Hello from Sam</strong></p>
+      <p>Use this website to stay up-to-date with my professional career.</p>
+    </div>  
+  </div>
+  
 </body>
 
 </html>
