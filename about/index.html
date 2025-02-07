@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
   <div class="grid-container" id="row-1">
     <div id="title-divider"></div>
     <div id="header-title">
-      <p>Sam Marsters Golf</p>
+      <p onclick="redirect(HOME)">Sam Marsters Golf</p>
     </div>
     <div id="title-divider"></div>
     <div id="header-title" class="img-2">
@@ -51,21 +52,57 @@
       <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
     </div>
     <div id="header-items">
-      <p class="hover-underline-animation" onclick="redirect(NEWS)">News</p>
+      <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
     </div>
-    
+    <div id="header-items">
+      <p class="hover-underline-animation" onclick="redirect(SUPPORT)">Support</p>
+    </div>
+    <div id="header-items">
+      <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa">&#xf16d;</i>
+    </div>
+    <div id="header-items">
+      <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa">&#xf09a;</i>
+    </div>
   </div>
+    <div id="body">
 
-  <div id="img">
-    <div id="dropdown-items" style="display: none;">
-      <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
-      <p class="hover-underline-animation" onclick="redirect(ABOUT)"><u>About</u></p>
-      <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
-      <p class="hover-underline-animation" onclick="redirect(NEWS)">News</p>
+      <div id="content"> 
+        <div id="img">
+          <img src="images/photos/sam3.jpg">
+        </div>
+        <div id="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu turpis, pellentesque nec neque ut, fringilla pellentesque diam. Vestibulum semper mauris ut sollicitudin varius. Curabitur augue sapien, convallis pellentesque arcu at, pretium rhoncus diam. Vestibulum eu congue justo. Vestibulum orci turpis, feugiat eget lorem nec, tincidunt efficitur nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tempus mauris vel vulputate mattis. Mauris pellentesque, augue quis blandit fermentum, lectus purus semper orci, sed ultrices risus mi ut metus. Cras ut turpis metus. Nulla elit risus, lacinia non sollicitudin ut, aliquam quis magna. Proin feugiat, nisl.</p>
+        </div>
+
+        <div id="text" style="left: 10%">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu turpis, pellentesque nec neque ut, fringilla pellentesque diam. Vestibulum semper mauris ut sollicitudin varius. Curabitur augue sapien, convallis pellentesque arcu at, pretium rhoncus diam. Vestibulum eu congue justo. Vestibulum orci turpis, feugiat eget lorem nec, tincidunt efficitur nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tempus mauris vel vulputate mattis. Mauris pellentesque, augue quis blandit fermentum, lectus purus semper orci, sed ultrices risus mi ut metus. Cras ut turpis metus. Nulla elit risus, lacinia non sollicitudin ut, aliquam quis magna. Proin feugiat, nisl. Mauris pellentesque, augue quis blandit fermentum, lectus purus semper orci, sed ultrices risus mi ut metus. Cras ut turpis metus.</p>
+        </div>
+
+        <div id="img">
+          <img src="images/photos/sam1.jpg">
+        </div>
+      </div>
+
+      <div id="text" style="padding: 0% 0% 5% 10%;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu turpis, pellentesque nec neque ut, fringilla pellentesque diam. Vestibulum semper mauris ut sollicitudin varius. Curabitur augue sapien, convallis pellentesque arcu at, pretium rhoncus diam. Vestibulum eu congue justo. Vestibulum orci turpis, feugiat eget lorem nec, tincidunt efficitur nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tempus mauris vel vulputate mattis. Mauris pellentesque, augue quis blandit fermentum, lectus purus semper orci, sed ultrices risus mi ut metus. Cras ut turpis metus. Nulla elit risus, lacinia non sollicitudin ut, aliquam quis magna. Proin feugiat, nisl.</p>
+      </div>
+
+      <img src="images/photos/sam2.jpg" width="70%">
+
+      <div id="dropdown-items" style="display: none; padding-bottom: 5%;">
+
+        <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
+        <p class="hover-underline-animation" onclick="redirect(ABOUT)"><u>About</u></p>
+        <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
+        <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
+        <p class="hover-underline-animation" onclick="redirect(SUPPORT)">Support</p>
+        <p></p>
+        <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa">&#xf16d;</i>
+        <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa">&#xf09a;</i>
+      </div>
+      
     </div>
 
-  </div>
-    
 </body>
 
 </html>

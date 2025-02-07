@@ -13,7 +13,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 5% 5% calc(45%/4) calc(45%/4) calc(45%/4) calc(45%/4);
+    grid-template-columns: 10% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
     grid-template-rows: 100%;
     gap: 0%;
     background-color: white;
@@ -23,6 +23,14 @@ body {
     background-color: white;
     font-family: "Ubuntu", serif;
     height: 100%;
+}
+
+#header-items > i {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #icon {
@@ -115,7 +123,7 @@ footer {
 }
 
 #dropdown-items {
-    position: absolute;
+    position: absolutew;
     top: 0%;
     height: 100%;
     width: 100%;
@@ -128,6 +136,26 @@ footer {
     padding: 2% 30%;
 }
 
+#text-case {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: fit-content;
+    color: white;
+}
+
 /* there has to be a better way.. oh well v_v */
 
 @media (max-width: 2000px) {
@@ -138,9 +166,9 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 10% 5% 5% calc(45%/4) calc(45%/4) calc(45%/4) calc(45%/4);
+        grid-template-columns: 15% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
         grid-template-rows: 100%;
-        gap: 2%;
+        gap: 0%;
         background-color: white;
         justify-content: center;
     }
@@ -151,13 +179,15 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 10% 5% 5% calc(45%/4) calc(45%/4) calc(45%/4) calc(45%/4);
+        grid-template-columns: 15% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
         grid-template-rows: 100%;
-        gap: 4%;
+        gap: 1%;
         background-color: white;
         justify-content: center;
     }
-
+    #header-items {
+        font-size: 130%;
+    }
 }
 
 @media (max-width: 950px) {
@@ -256,7 +286,7 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 10% 30% 5% 20% 25% 10%;
+        grid-template-columns: 5% 25% 5% 30% 25% 10%;
         grid-template-rows: 100%;
         gap: 0%;
         background-color: white;
@@ -274,12 +304,66 @@ footer {
     }
 
     #icon {
-        width: 70%;
+        width: 40%;
         object-fit: contain;
         margin: 0;
     }
     
-
+    #text > p {
+        padding: 10% 0;
+    }
 }
 
+@media (max-width: 500px) {
+    #dropdown-menu {
+        display: block;
+    }
+    #header-items {
+        display: none;
+    }
 
+    .img {
+        display: none;
+    }
+
+    #title-divider {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 10% 40% 5% 20% 15% 10%;
+        grid-template-rows: 100%;
+        gap: 0%;
+        background-color: white;
+        justify-content: center;
+    }
+
+    #vert {
+        position: relative;
+        height: 50%;
+    }
+
+    #vert2 {
+        display: block;
+        height: 50%;
+    }
+
+    #icon {
+        width: 100%;
+        object-fit: contain;
+        margin: 0;
+    }
+    #text > p {
+        padding: 10%, 0;
+    }
+}
+
+.background-fade {
+    transition: background-color 1s ease-in;
+}
+
+.background-fade:hover {
+    background-color: rgba(25, 25, 25, 0.5);
+    transition:background-color 1s ease-out;
+}

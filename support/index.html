@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <title>Sam Marsters Golf</title>
+  <link rel="icon" type="image/x-icon" href="images/icon2.png">
+</head>
+<body>
+  <div class="grid-container" id="row-1">
+    <div id="title-divider"></div>
+    <div id="header-title">
+      <p onclick="redirect(HOME)">Sam Marsters Golf</p>
+    </div>
+    <div id="title-divider"></div>
+    <div id="header-title" class="img-2">
+      <div id="vert">
+        <image src="images/new-zealand-rugby-union-fern-logo-566F26DDF7-seeklogo.com.png" id="icon"></image>
+      </div>
+      <div id="vert2">
+        <image src="images/cooks.png" id="icon"></image>
+      </div>
+
+    </div>
+    <div id="header-title" class="img">
+      <image src="images/cooks.png" id="icon"></image>
+    </div>
+    <div id="title-divider"></div>
+    <div id="dropdown-menu">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
+
+    <div id="header-items" >
+      <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
+    </div>
+    <div id="header-items">
+      <p class="hover-underline-animation" onclick="redirect(ABOUT)">About</p>
+    </div>
+    <div id="header-items">
+      <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
+    </div>
+    <div id="header-items">
+      <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
+    </div>
+    <div id="header-items">
+      <p class="hover-underline-animation" onclick="redirect(SUPPORT)">Support</p>
+    </div>
+    <div id="header-items">
+      <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa">&#xf16d;</i>
+    </div>
+    <div id="header-items">
+      <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa">&#xf09a;</i>
+    </div>
+  </div>
+
+  <div id="img">
+    <image src="images/background.jpg" id="landing"></image>
+    <div id="foot-note">
+      <div id="text">
+        <h style="font-size: 200%;">Here to help me out?</h>
+        <p>The move to professional has been a long awaited and big move in my life. <br>As a travelling athlete based in the capital, support of any kind goes a long way. </p>
+        <p> </p>
+        <p>For inquiries, get in contact:<br>email: sammarsters2002@gmail.com | ph: +64 27 647 0004</p>
+        <p> </p>
+        <p>If you're looking to anonymously donate, bank transfer is the easiest option!<br>bank number: 03-0521-0007806-000</p>
+        <p></p>
+        <p>If neither of these are what you're looking for you can show your support<br>by following me on social media</p>
+
+
+
+        
+      </div>  
+    </div>
+    <div id="dropdown-items" style="display: none;">
+      <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
+      <p class="hover-underline-animation" onclick="redirect(ABOUT)">About</p>
+      <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
+      <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
+      <p class="hover-underline-animation" onclick="redirect(SUPPORT)"><u>Support</u></p>
+      <p></p>
+      <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa">&#xf16d;</i>
+      <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa">&#xf09a;</i>
+    </div>
+  
+  </div>
+  
+</body>
+
+</html>
