@@ -6,7 +6,7 @@ const SUPPORT = "support"
 
 
 function redirect(e) {
-    window.location.href = window.location.href.replace(SUPPORT, e);
+    window.location.href = "https://" + window.location.host + e;
 }
 
 function myFunction(x) {
