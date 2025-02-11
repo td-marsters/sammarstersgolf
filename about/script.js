@@ -1,8 +1,8 @@
-const HOME = "sammarstersgolf/"
-const ABOUT = "sammarstersgolf/about/"
-const EVENTS = "sammarstersgolf/events/"
-const GALLERY = "sammarstersgolf/gallery/"
-const SUPPORT = "sammarstersgolf/support/"
+const HOME = ""
+const ABOUT = "about"
+const EVENTS = "events"
+const GALLERY = "gallery"
+const SUPPORT = "support"
 
 
 function redirect(e) {

@@ -54,7 +54,6 @@ footer {
     object-fit: cover;
     text-align: center;
     position: relative;
-
 }
 
 #header-items > p {
@@ -63,6 +62,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+
 }
 
 .hover-underline-animation {
@@ -117,6 +118,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 /* there has to be a better way.. oh well v_v */
 
