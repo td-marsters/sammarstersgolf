@@ -1,6 +1,6 @@
 const HOME = ""
 const ABOUT = "about"
-const EVENTS = "events"
+const CORPORATE = "corporate"
 const GALLERY = "gallery"
 const SUPPORT = "support"
 

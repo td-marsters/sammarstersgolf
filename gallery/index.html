@@ -32,7 +32,7 @@
     <div id="header-title" class="img">
       <image src="images/cooks.png" id="icon"></image>
     </div>
-    <div id="title-divider"></div>
+    <div id="title-divider" style="display: block;"></div>
     <div id="dropdown-menu">
       <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
@@ -49,19 +49,19 @@
       <p class="hover-underline-animation" onclick="redirect(ABOUT)">About</p>
     </div>
     <div id="header-items">
-      <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
-    </div>
-    <div id="header-items">
-      <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
+      <p class="hover-underline-animation" onclick="redirect(CORPORATE)">Corporate</p>
     </div>
     <div id="header-items">
       <p class="hover-underline-animation" onclick="redirect(SUPPORT)">Support</p>
     </div>
     <div id="header-items">
-      <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa hover-underline-animation">&#xf16d;</i>
+      <p class="hover-underline-animation" onclick="redirect(GALLERY)">Gallery</p>
     </div>
     <div id="header-items">
-      <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa hover-underline-animation">&#xf09a;</i>
+      <i class="hover-underline-animation fa" onclick="redirectSocial('IG')" style="font-size:40px;">&#xf16d;</i>
+    </div>
+    <div id="header-items">
+      <i class="hover-underline-animation fa"onclick="redirectSocial('FB')" style="font-size:40px;">&#xf09a;</i>
     </div>
   </div>
 
@@ -206,8 +206,8 @@
   <p class="hover-underline-animation" onclick="redirect(HOME)">Home</p>
   <p class="hover-underline-animation" onclick="redirect(ABOUT)">About</p>
   <p class="hover-underline-animation" onclick="redirect(EVENTS)">Events</p>
-  <p class="hover-underline-animation" onclick="redirect(GALLERY)"><u>Gallery</u></p>
   <p class="hover-underline-animation" onclick="redirect(SUPPORT)">Support</p>
+  <p class="hover-underline-animation" onclick="redirect(GALLERY)"><u>Gallery</u></p>
   <p></p>
   <i onclick="redirectSocial('IG')" style="font-size:40px;" class="fa">&#xf16d;</i>
   <i onclick="redirectSocial('FB')" style="font-size:40px;" class="fa">&#xf09a;</i>

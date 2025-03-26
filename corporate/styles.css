@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: "Ubuntu", serif;
+    background: #333;
+    z-index: -1;
 }
 
 #vert2 {
@@ -13,7 +15,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
+    grid-template-columns: 10% 5% 5% 15% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);
     grid-template-rows: 100%;
     gap: 0%;
     background-color: white;
@@ -120,17 +122,24 @@ footer {
   }
 
 
+#row-1 {
+    z-index: 1;
+}
+
 #dropdown-menu {
     display: none;
 }
 
 #dropdown-items {
-    position: absolutew;
-    top: 0%;
-    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    height: 1200px;
+    overflow: hidden;
     width: 100%;
     background: white;
     opacity: 90%;
+    text-align: center;
 }
 
 #dropdown-items > p {
@@ -154,8 +163,10 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: fit-content;
     color: white;
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0.8);
+    height: 100%;
 }
 
 /* there has to be a better way.. oh well v_v */
@@ -168,7 +179,7 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 15% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
+        grid-template-columns: 20% 5% 5% 2.5% calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc((60%/6)/2) calc((60%/6)/2);
         grid-template-rows: 100%;
         gap: 0%;
         background-color: white;
@@ -181,17 +192,17 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 15% 5% 5% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);;
+        grid-template-columns: 20% 5% 5% 2.5% calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc((60%/6)/2) calc((60%/6)/2);
         grid-template-rows: 100%;
-        gap: 1%;
+        gap: 0%;
         background-color: white;
         justify-content: center;
     }
+    
     #header-items {
         font-size: 130%;
     }
 }
-
 @media (max-width: 950px) {
 
     #dropdown-menu {
@@ -356,16 +367,26 @@ footer {
         object-fit: contain;
         margin: 0;
     }
-    #text > p {
-        padding: 10%, 0;
+
+    #text {
+        font-size: 60%;
     }
 }
 
-.background-fade {
-    transition: background-color 1s ease-in;
+.info-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    gap: 5%;
+    justify-content: center;
 }
 
-.background-fade:hover {
-    background-color: rgba(25, 25, 25, 0.5);
-    transition:background-color 1s ease-out;
+.text-container {
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: 15% 30%;
+    grid-template-rows: 100%;
+    gap: 20%;
+    justify-content: center;
 }
