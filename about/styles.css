@@ -325,14 +325,24 @@ footer {
     grid-template-columns: 50% 50%;
 }
 
+.content-points {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1%49%49%1%;
+}
+
 #img {
     position: relative;
     width: 100%;
+    overflow-y: hidden;
+    max-height: 80%;
+    top:0;
 }
 
 #img > img {
     width: 70%;
-    padding: 10% 0;
+    padding: 0;
+    
 }
 
 #text {
@@ -341,7 +351,9 @@ footer {
     color: black;
     font-size: 2vw;
     font-weight: 100;
-    padding: 10% 0;
+    padding: 0 0;
+    text-align: left;
+    top:0;
 }
 
 #text > p {
