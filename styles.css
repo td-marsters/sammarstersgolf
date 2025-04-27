@@ -13,7 +13,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 5% 5% 15% calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc(45%/6) calc((45%/6)/2) calc((45%/6)/2);
+    grid-template-columns: 10% 5% 5% 15% calc(45%/5) calc(45%/5) calc(45%/5) calc(45%/5) calc((45%/5)/2) calc((45%/5)/2);
     grid-template-rows: 100%;
     gap: 0%;
     background-color: white;
@@ -187,7 +187,7 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 20% 5% 5% 2.5% calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc((60%/6)/2) calc((60%/6)/2);
+        grid-template-columns: 20% 5% 5% 2.5% calc(60%/5) calc(60%/5) calc(60%/5) calc(60%/5) calc((60%/5)/2) calc((60%/5)/2);
         grid-template-rows: 100%;
         gap: 0%;
         background-color: white;
@@ -200,7 +200,7 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 20% 5% 5% 2.5% calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc(60%/6) calc((60%/6)/2) calc((60%/6)/2);
+        grid-template-columns: 20% 5% 5% 2.5% calc(60%/5) calc(60%/5) calc(60%/5) calc(60%/5) calc((60%/5)/2) calc((60%/5)/2);
         grid-template-rows: 100%;
         gap: 0%;
         background-color: white;
